@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-card">
+            <h1>Feedback Form</h1>
+            <p class="description">
+                We value your feedback. Please share your thoughts with us.
+            </p>
+
+            <form id="contactForm">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="subject">Subject</label>
+                <select id="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="General Feedback">General Feedback</option>
+                    <option value="Website Issue">Website Issue</option>
+                    <option value="Suggestion">Suggestion</option>
+                    <option value="Complaint">Complaint</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="feedback">Your Feedback</label>
+                <textarea
+                    id="feedback"
+                    rows="5"
+                    placeholder="Write your feedback here..."
+                    required
+                ></textarea>
+
+                <button type="submit" id="submitBtn">
+                    Submit Feedback
+                </button>
+
+                <p id="statusMessage" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="contact.js"></script>
+</body>
+</html>
